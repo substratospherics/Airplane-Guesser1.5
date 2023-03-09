@@ -1,0 +1,240 @@
+/* Default Styling */
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6fbcf2; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#1e4c7d, #badcf5);
+}
+
+main {
+   height: 100vh;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+/* Button Styling */
+
+#start {
+  display: flex;
+}
+
+.start-btns {
+  font-family: "Inter", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 3.5rem;
+  width: 35vw;
+  background: #1e4c7d;
+  color: white;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 0.4rem;
+  transition: background 1s, color 1s;
+}
+
+.start-btns:hover {
+  color: #1e4c7d;
+  cursor: pointer;
+  background: #badcf5;
+}
+
+/* ------------------------------------------------------------------------------------------
+  GAME STYLING BELOW ---------------------------------------------------------- */
+  
+#game {
+   height: 100vh;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   display: none;
+}
+
+/* Top Styling */
+
+#top,
+#timer,
+#topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "inter", sans-serif;
+  color: white;
+}
+
+#topBar {
+  width: 100vw;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#top {
+  flex-direction: column;
+}
+
+
+#line {
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  background: #aeebf2;
+  width: 75vw;
+  height: 10px;
+  transition: width 1s;
+}
+
+/* Middle Styling */
+
+#middle,
+#img {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  background: black;
+  border: 0.15rem solid black;
+  border-radius: 0.6rem;
+  height: 17rem;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+/* Bottom Styling */
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#fifty {
+  font-size: 1.4em;
+  padding: 0.2rem 0.5rem;
+  color: #1e4c7d;
+  background: #d3e2f2;
+  border: solid 0.15rem #1e4c7d;
+  border-radius: 1rem;
+  transition: background 1s, color 1s;
+  font-family: "inter", sans-serif;
+}
+
+#fifty:hover {
+  color: #d3e2f2;
+  background: #1e4c7d;
+  cursor: pointer;
+}
+
+.right {
+  margin-right: 1rem;
+}
+
+.answerChoices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answerChoices button {
+  font-family: "Inter", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 25vh;
+  width: 35vw;
+  background: #1e4c7d;
+  color: white;
+  border: solid 0.15rem #d3e2f2;
+  border-radius: 0.4rem;
+  transition: background 1s, color 1s;
+  font-size: 1.1em;
+  transition: height, 2s;
+}
+
+#restart button,
+#stats button,
+#mainButton3 {
+    font-family: "Inter", sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 3.5rem;
+    width: 35vw;
+    background: #1e4c7d;
+    color: white;
+    border: solid 0.15rem #d3e2f2;
+    border-radius: 0.4rem;
+    transition: background 1s, color 1s;
+    font-size: 1.1em;
+    transition: height, 2s;
+}
+
+.answerChoices button:hover,
+#restart button:hover,
+#stats button:hover,
+#mainButton3:hover {
+  color: #1e4c7d;
+  cursor: pointer;
+  background: #badcf5;
+}
+
+#restart,
+#stats,
+#settings {
+    text-align: center;
+    height: 100vh;
+    display: none;
+    font-family: "inter", sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#easy,
+#medium,
+#hard {
+  font-family: "Inter", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 3.5rem;
+  width: 35vw;
+  color: white;
+  border: solid 0.15rem #d3e2f2;
+  border-radius: 0.4rem;
+  transition: background 1s, color 1s;
+  font-size: 1.1em;
+  transition: height, 2s;
+}
+
+#hard:hover,
+#medium:hover,
+#easy:hover {
+  cursor: pointer;
+}
+
+#hard:hover {
+  background: #d64a31;
+}
+
+#medium:hover {
+  background: #c3cf52;
+}
+
+#easy:hover {
+  background: #84cf6b;
+}
+
+/* Media Queries */
+
+@media screen and (max-height: 800px) {
+    body {
+      background-color: #346ca8;
+      background-image: none;
+    }
+    .answerChoices button {
+        height: 15vh;
+        transition: height, 2s;
+    }
+  }

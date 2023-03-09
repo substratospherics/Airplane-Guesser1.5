@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main id="start">
+      <button type="button" id="start-btn" class="start-btns">
+        START GAME
+      </button>
+      <button type="button" id="statistics-btn" class="start-btns">
+        STATISTICS
+      </button>
+      <button type="button" id="settings-btn" class="start-btns">
+        SETTINGS
+      </button>
+    </main>
+    <main id="game">
+      <section id="top">
+        <div id="topBar">
+          <p id="question">1 / 10</p>
+          <p id="hearts">❤️ 3</p>
+        </div>
+        <div id="timer">
+          <p id="time">00:20</p>
+          <div id="line"></div>
+        </div>
+      </section>
+      <section id="middle">
+        <div id="img">
+          <img
+            id="img2"
+            src="https://i.ytimg.com/vi/AjWfY7SnMBI/maxresdefault.jpg"
+          />
+        </div>
+      </section>
+      <section id="bottom">
+        <div id="resetFifty">
+          <button type="button" id="fifty">50/50</button>
+        </div>
+        <div class="answerChoices">
+          <button type="button" class="right answer">Answer Choice</button>
+          <button type="button" class="answer">Answer Choice</button>
+        </div>
+        <div class="answerChoices">
+          <button type="button" class="right answer">Answer Choice</button>
+          <button type="button" class="answer">Answer Choice</button>
+        </div>
+      </section>
+    </main>
+    <main id="restart">
+    </main>
+    <main id="stats">
+    </main>
+    <main id="settings">
+    </main>
+  </body>
+</html>
