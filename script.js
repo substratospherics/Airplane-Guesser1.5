@@ -298,7 +298,7 @@ function displayLess() {
     hearts--;
     if (hearts > 0) {
       clearInterval(timer);
-      heartEl.textContent = `❤️ ${hearts - 1}`;
+      heartEl.textContent = `❤️ ${hearts}`;
       let ranNumber = getRandomNumber();
       time = currentTime;
       if (currentTime < 10) {
@@ -311,7 +311,14 @@ function displayLess() {
       showQuestion(ranNumber);
     } else {
       clearInterval(timer);
-      restartScreen();
+      heartEl.textContent = `❤️ ${hearts}`;
+      fifty.style.pointerEvents = "none";
+      for (let i = 0; i < answerChoices.length; i++) {
+        answerChoices[i].style.pointerEvents = "none";
+      }
+      setTimeout(function() {
+        restartScreen();
+      }, 2000);
     }
   }
 }
